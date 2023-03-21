@@ -1,0 +1,34 @@
+
+#import math library
+import math
+
+def main():
+    #Get value of pi from math library
+    pi_val = math.pi
+
+    #Ask user for input for the radius
+    radius = float(input("What is the radius: \n"))
+        
+    #Calculate circumference of circle using radius
+    circumference = 2 * pi_val * radius
+        
+    #Calculate area of circle using radius
+    area = pi_val * radius ** 2
+    
+    #Calculate volume of sphere using radius
+    volume = 4 / 3 * pi_val * radius ** 3
+
+
+    #Print Circumference, area, and volume using radius and formatting
+    print("\nThe circumference of a circle with a radius of {:.3f} is {:.5f}".format(radius, circumference))
+    print("The area with a radius of {:.3f} is {:.5f}".format(radius, area))
+    print("The volume of a sphere with a radius of {:.3f} is {:.5f}".format(radius, volume))
+    
+    #Print formulas used
+    print("\nThe formulas for calculating the circumference, C, area A, and volume, V, for a radius,r, are as follows:")
+    print("C = 2\u03C0r") # C = 2 * pi * r
+    print("A = \u03C0r\u00b2") #A = pi * r ^2
+    print("V = 4/3 \u03C0r\u00b3") #V = 4/3 * pi * r ^3
+
+#Call main function to run program
+main()
