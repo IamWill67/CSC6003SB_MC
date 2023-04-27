@@ -5,43 +5,21 @@
 #Assignment 08: Final Project
 #Due: 00 MAY 23
 
+import random
 
 #Big boi class - BankManager
 class BankManager:
 
-    def __init__(self, account, password):
+    def __init__(self):
+        pass
 
-        self.account = account
-        self.password = password
-    
-
-    def display(self,):
-
-        print(self.account)
-        print(self.password)
-
-
-#childclass of BankManager - AccountClass
-
-class AccountClass(BankManager):
-    def randomAccNumber(self):
-        
+    class AccountClass:
+        def __init__(self):
+            self.account_number = random.randint(100000,999999)
 
 
 
+bank_manager = BankManager()
+account = bank_manager.AccountClass()
 
-def main():
-
-    account = 12345
-    password = "password"
-
-    bank_Manager = BankManager(account,password)
-
-    bank_Manager.display()
-
-    #prompt user for input __ if '11' entered, quit program
-    while True:
-        
-
-if __name__ == "__main__":
-    main()
+print(account.account_number)
